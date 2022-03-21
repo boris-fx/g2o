@@ -26,6 +26,7 @@
 
 #include "optimization_algorithm_factory.h"
 
+#include <algorithm>
 #include <cassert>
 #include <iostream>
 #include <typeinfo>
