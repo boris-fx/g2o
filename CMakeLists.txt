@@ -183,7 +183,9 @@ if (OPENGL_FOUND AND G2O_USE_OPENGL)
 endif()
 
 # For building the GUI
-find_package(QGLViewer)
+if (G2O_BUILD_APPS OR G2O_BUILD_EXAMPLES)
+    find_package(QGLViewer)
+endif()
 
 # The Ceres package is required for some of the solvers.
 # Ceres is vendored in g2o/EXTERNAL/ceres, or the system's can be used.
